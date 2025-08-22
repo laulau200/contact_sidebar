@@ -1,0 +1,167 @@
+<div class="container">
+  <nav class="navbar navbar-default">
+
+      <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="exp_pro.html">expériences</a>
+  <a href="formation.html">formations</a>
+  <a href="loisir.html">course à pied</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+
+<div class="container">
+  <nav class="navbar navbar-default">
+
+      <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="exp_pro.html">expériences</a>
+  <a href="formation.html">formations</a>
+  <a href="loisir.html">course à pied</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+  <!--h2>Collapsed Sidebar</h2-->
+  <p>Content...</p>
+</div>
+
+
+--------------
+<div class="container">
+  <nav class="navbar navbar-default">
+
+      <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="exp_pro.html">expériences</a>
+  <a href="formation.html">formations</a>
+  <a href="loisir.html">course à pied</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+  <!--h2>Collapsed Sidebar</h2-->
+  <p>Content...</p>
+</div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="nav navbar-nav">
+          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Link</a></li>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="exp_pro.html">expériences</a></li>
+              <li><a href="formation.html">formations</a></li>
+              <li><a href="loisir.html">running</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <!--li><a href="#">One more separated link</a></li-->
+            </ul>
+        </div>
+        </div>
+          </li>
+        </ul>
+</ul>
+<script>
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+
+--------------
+menu hamburger : 
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+---
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+  <!--h2>Collapsed Sidebar</h2-->
+  <p>Content...</p>
+</div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="nav navbar-nav">
+          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Link</a></li>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="exp_pro.php">expériences</a></li>
+              <li><a href="formation.php">formations</a></li>
+              <li><a href="loisir.php">running</a></li>
+              <li><a href="contact.php">contact</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <!--li><a href="#">One more separated link</a></li-->
+            </ul>
+        </div>
+        </div>
+          </li>
+        </ul>
+</ul>
+<script>
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+
+tout mettre dans header
+
+ajouter balise nav au début du body : 
+  <nav class="navbar navbar-default">
+
+      <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="exp_pro.php">expériences</a>
+  <a href="formation.php">formations</a>
+  <a href="loisir.php">course à pied</a>
+  <a href="contact.php">Contact</a>
+</div>
