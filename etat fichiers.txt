@@ -1,0 +1,18 @@
+xamppx64/proj_ldemazy/exp_pro.php : OK, manque script pour décaler
+
+http://localhost/proj_ldemazy/index_ldemazy.php : tous les éléments sont OK, 
+revoir dispo
+
+récupérer la navbar avec js page contact.php
+
+
+<nav>
+        <ul>
+          <li--><a href="index.php">Index</a></li-->
+          <li><a href="exp_pro.php">Vie Professionnelle</a></li>
+          <li><a href="formations.php">Formations suivies</a></li>
+          <li><a href="loisir.php">Un peu de sport... </a></li>
+        </ul>
+	  </nav>
+
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Exemple de structure d'une page web">
+<meta name="keywords" content="HTML, CSS, Javascript, JQuery">
+<meta name="author" content="Laurent DEMAZY">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="technicien informatique, administrateur réseaux, windows, linux">
+<meta name="author" content="Laurent DEMAZY">
+<meta http-equiv="refresh" content="300">
+<meta name="color-scheme" content="dark light">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<link rel="stylesheet" href="css/sticky.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    margin: 0px auto 40px auto;
+    background-color: rgb(43, 139, 51);
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    width: 25%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: rgb(223, 10, 10);
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.conteneur{
+  margin: 0px 20px;
+  height: 1500px;
+}
+
+body {
+    margin-top: 350px;
+  background-image: url("./img/ordinateur.png");
+  font-size: 16px; /* sets 1rem = 16px */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  color:aquamarine;
+}
+
+footer{
+    clear: both;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 100%;
+    margin: 10px;
+    padding: 10px;
+    color: #ccc;
+    background-color: #333;
+    align-items:center;
+}
+
+/* footer p{
+    text-align: right;
+    padding: 10px;
+} */
+    
+} 
+    </style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+				<title>Page modele HTML5</title>
+</head>
+<body>
+	<section id="global">
+	<section id="header">
+	</section>
+	<section id="options">
+	</section>
+	<section id="logo">
+	</section>
+	<nav id="menu">
+	
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="./index.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pages/exp_pro.php">Carrière</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="pages/loisir.php">Course à pied</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="pages/formation.php">formations</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="pages/contact.php">Contact</a>
+      </li>
+      
+    </ul>
+  </div>
+
+	</nav>
+	<section id="image">
+	</section>
+	
+	<section id="contenu">
+	<h2>Test de page</h2>
+	<p style="color: blue">Bonjour, <br>
+    Je m'appelle Laurent DEMAZY, et j'ai 45 ans. <br><br>
+Technicien Support depuis <em>26 ans,</em><br>
+je me reconverti comme <em>Webdéveloppeur</em><br>
+J'ai suivi la formation <em>Développeur Web/Web mobile</em> à distance avec <a href="https://www.proformea.fr/formations/developpeur-web-et-web-mobile/">Proformea</a><em></em>. <br><br>
+Depuis 26 ans, j'ai été Technicien Support pour plusieurs entreprises de la région stéphanoise : 
+<ul><br>
+    <li><a href="https://www.value-info.fr/">VALUE IT</a></li>
+    <li>ECONOCOM pour THALES</li>
+    <li><a href="https://www.tessi.eu//">TESSI</a></li>
+    <li>LYCEE FAURIEL</li>
+    <li>GROUPE CASINO(13 ans)</li>
+    <br>
+    Retrouvez mon CV sur <a href="exp_pro.php">lien</a>
+</ul> 
+</p>
+
+<article>
+        <p style="color: blue">>Je suis reconnu <em>travailleur handicapé</em> depuis 26 ans. </p>
+    <p style="color: blue">Je pratique assidument la course à pied pendant mon temps libre. </p> <br>
+    </article>
+	
+	</section>
+	<section id="contact">
+	<article>
+        <p> <a href="contact.php" class="email-button">Contactez-moi ! via le formulaire</a></p>
+    </article>
+	</sectionn>
+	
+	<section id="footer">
+	</section>
+	
+	</section>
+	
+	</body>
+</html>

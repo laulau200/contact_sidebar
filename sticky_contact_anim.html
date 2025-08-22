@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sticky.css">
+    <style>
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    margin: 0px auto 40px auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    width: 25%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: rgb(223, 10, 10);
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.conteneur{
+  margin: 0px 20px;
+  height: 1500px;
+}
+
+body {
+  background-image: url("./images/processeur.jpg");
+  color:aquamarine;
+}
+    </style>
+    <title>sticky</title>
+</head>
+<body>
+    
+<div>
+    <h1>Menu horizontal sticky HTML et CSS</h1>
+<nav>
+  <ul>
+    <li><a href="#">Cours Complets</a></li>
+    <li><a href="#">Articles</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">A propos</a></li>
+  </ul>
+</nav>
+
+<div class="conteneur">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sticky.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <style>
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    margin: 0px auto 40px auto;
+    background-color: rgb(43, 139, 51);
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    width: 25%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: rgb(223, 10, 10);
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.conteneur{
+  margin: 0px 20px;
+  height: 1500px;
+}
+
+body {
+    margin-top: 350px;
+  background-image: url("./img/ordinateur.png");
+  font-size: 16px; /* sets 1rem = 16px */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  color:aquamarine;
+}
+
+footer{
+    clear: both;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 100%;
+    margin: 10px;
+    padding: 10px;
+    color: #ccc;
+    background-color: #333;
+    align-items:center;
+}
+
+/* footer p{
+    text-align: right;
+    padding: 10px;
+} */
+    <link rel="stylesheet" href="css/text_anim.css">
+} 
+    </style>
+    <title>Contact</title>
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"-->
+</head>
+<body>
+  
+<div>
+    <h1>WEBDEVELOPPEUR</h1>
+<!--insertion navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="./index.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pages/exp_pro.php">Carrière</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="pages/loisir.php">Course à pied</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="pages/formation.php">formations</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="pages/contact.php">Contact</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!--fin navbar-->
+
+<!---Insertion container-->
+<div class="conteneur">
+<!DOCTYPE html>
+<?php
+	// test conversion
+	?>
+<html lang="en">
+  <head>
+    <title>Page contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/text_anim.css">
+    <link rel="stylesheet" href="css/titre.css">
+	
+<style>
+.h2{
+	color:green;
+}
+
+/* Styles de liens non visités */
+      a:link {
+        color: blue;
+        text-decoration: none;
+      }
+
+      /* Styles de liens visités */
+      a:visited {
+        color: purple;
+      }
+
+      /* État survolé */
+      a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+
+      /* État actif (lors du clic) */
+      a:active {
+        color: green;
+      }
+
+      nav ul{
+        width: 920px;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+      }
+	
+</style>
+
+<body>
+    <section id="global".style.display="white">
+        <header>
+          <?php echo require_once("header.inc") ?>
+
+
+
+        </header>
+
+<div class="text-changer">
+        <p class="intro-text">J'ai travaill&eacute; pour</p> <br>
+        <div class="roles-container">
+            <span class="role">VALUE IT</span>
+            <span class="role">ECONOCOM pour THALES</span>
+            <span class="role">TESSI INFORMATIQUE</span>
+            <span class="role">LYCEE FAURIEL</span>
+            <span class="role">GROUPE CASINO</span>
+        </div>
+        </div>
+
+            <h1>pour me contacter</h1>
+
+    <div class="wrapper">
+                <div class="static-txt">Je suis</div>
+                <ul class="dynamic-txts">
+                    <li><span>Webdev</span></li>
+                    <li><span>Administrateur Réseau</span></li>
+                    <li><span>technicien informatique</span></li>
+                    <li><span>Runner</span></li>
+                </ul>
+                </div>
+
+    
+    
+
+        </header>
+
+        <hr>
+            
+        <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">	          
+            <li class="nav-item"><a href="exp_pro.html" class="nav-link"><span>Experiences professionnelles</span></a></li>
+            <li class="nav-item"><a href="formation.html" class="nav-link"><span>Formations</span></a></li>
+            <li class="nav-item"><a href="loisirs.html" class="nav-link"><span>course à pied</span></a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link"><span>me contacter</span></a></li>
+	        </ul>
+	      </div>
+        <nav>
+        <ul>
+          <li><a href="exp_pro.php"><p class="text-white">Vie professionnelle</p></a></li>
+          <li><a href="loisir.php"><p class="text-white">un peu de sport</p></a></li>
+          <li><a href="formation.php"><p class="text-white">Formations</p></a></li>
+          <li><a href="Contact.php"><p class="text-white">Me contacter</p></a></li>
+        </ul>
+	  </nav>
+	    </div>
+      
+        <article>
+            <h2></h2>
+            <p class="text-white">En cours de formation Webdev, je suis à la recherche d'un emploi. N'hésitez pas à me contacter via le formulaire ! </p>
+            <form action="mail.php" class="p-5 bg-dark">
+                  <div class="form-group">
+                    <label for="name"><p class="text-white">Votre nom : </p></label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email"><p class="text-white">Votre mail : </p></label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="website"><p class="text-white">site internet : </p></label>
+                    <input type="url" class="form-control" id="website">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message"><p class="text-white">Message : </p></label>
+                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" value="Envoyez votre message..." class="btn py-3 px-4 btn-primary">
+                  </div>
+
+</form>
+        </article>
+        <article>
+            
+        </article>
+
+        
+        <footer>
+
+        </footer>
+
+    </section>
+
+</body>
+</html>
+<!--fin container-->
+
+<!--fermeture premier div et fin-->
+</div>
+
+<footer class="bg-dark text-center text-white">
+<div class="container p-4 pb-0">
+<section class="mb-4">
+<!-- Facebook -->
+<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<!-- Twitter -->
+<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+<i class="fab fa-twitter"></i>
+</a>
+
+<!-- Google -->
+<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+<i class="fab fa-google"></i>
+</a>
+
+<!-- Instagram -->
+<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+<i class="fab fa-instagram"></i>
+</a>
+
+<!-- LinkedIn -->
+<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+<i class="fab fa-linkedin-in"></i>
+</a>
+
+<!-- Github -->
+<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+<i class="fab fa-github"></i>
+</a>
+</section>
+</div>
+
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+© 2023 Copyright :
+<a class="text-white" href="https://mdbootstrap.com/">footer bootstrap</a>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+    </html>
+</div>
+</div>
+</body>

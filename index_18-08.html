@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sticky.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    margin: 0px auto 40px auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    width: 25%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: rgb(223, 10, 10);
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.conteneur{
+  margin: 0px 20px;
+  height: 1500px;
+}
+
+body {
+  background-image: url("./img/ordinateur.png");
+  font-size: 16px; /* sets 1rem = 16px */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  color:aquamarine;
+}
+
+ .footer{
+    clear: both;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px;
+    padding: 10px;
+    color: #ccc;
+    background-color: #333;
+} 
+    </style>
+    <title>cv Laurent DEMAZY</title>
+</head>
+<body>
+    
+<div>
+    <h1>WEBDEVELOPPEUR</h1>
+<!--insertion navbar-->
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="pages/contact.php">contact</a></li>
+    <li><a href="pages/exp_pro.php">exp_pro</a></li>
+    <li><a href="pages/formation.php">formations</a></li>
+    <li><a href="pages/loisir.php">loisir</a></li>
+  </ul>
+</nav>
+<!--fin navbar-->
+
+<!---Insertion container-->
+<div class="conteneur">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>essai</title>
+    </head>
+    <section id="contenu">
+    <article>
+    <p>Bonjour, <br>
+    Je m'appelle Laurent DEMAZY, et j'ai 45 ans. <br><br>
+Technicien Support depuis <em>26 ans,</em><br>
+je me reconverti comme <em>Webdéveloppeur</em><br>
+J'ai suivi la formation à distance avec <a href="https://www.proformea.fr/formations/developpeur-web-et-web-mobile/">Proformea</a><em></em>. <br><br>
+Depuis 26 ans, j'ai été Technicien Support pour plusieurs entreprises de la région stéphanoise : 
+<ul><br>
+    <li><a href="https://www.value-info.fr//">VALUE IT</a></li>
+    <li>ECONOCOM pour THALES</li>
+    <li><a href="https://www.tessi.eu//">TESSI</a></li>
+    <li>LYCEE FAURIEL</li>
+    <li>GROUPE CASINO(13 ans)</li>
+    <br>
+    Retrouvez mon CV sur <a href="exp_pro.php">CV Laurent DEMAZY</a>
+</ul> 
+</p>
+    
+    </article>
+
+    <article>
+        <p>Je suis reconnu <em>travailleur handicapé</em> depuis 26 ans. </p>
+    <p>Je pratique assidument la course à pied pendant mon temps libre. </p> <br>
+    </article>
+
+    <article>
+        <a href="mailto:laurent.demazy@gmail.com" class="email-button">Contactez-moi !</a>
+    </article>
+    </html>
+</div>
+<!--fin container-->
+
+<!--fermeture premier div et fin-->
+</div>
+
+<footer>
+      <small>certifications obtenues</small><br>
+      <img alt="CISCO et CRIP" width="300" height="175"&gtalign="right" src="./img/logo_cisco.png" />
+      <img alt="CISCO et CRIP" align="right" src="./img/urgecam.png" />
+      <br>
+      <a href="fichiers/CiscoCertificate-ccna1.pdf">ccna-1</--a><br>
+      <a href="fichiers/CiscoCertificate-ccna2.pdf">ccna-2</a><br>
+      <a href="fichiers/CiscoCertificateitessentials.pdf">Cisco It Essentials</a>
+    </footer>
+</body>
