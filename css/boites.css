@@ -1,0 +1,14 @@
+section{
+    display: -webkit-flex;
+    -webkit-box-flex-direction-reverse: column;
+    margin: 10px;
+    border: 5px solid black;
+    background: grey;
+}
+
+div{
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    background: black;
+}
